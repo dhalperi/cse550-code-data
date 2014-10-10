@@ -47,5 +47,7 @@ Define a seed set `SN` to be all papers with `id <= N`. You can vary the size of
 ### Example
 The given program `example.py` computes the least common ancestors (LCAs) for the set `SN` with `N=50`.
 
+(The example was tested using Python 2.7 and you will need to install the `networkx` library, likely via `pip install networkx`.)
+
 # Assignment challenge
 **(TAs, help?)** On your big data technology of choice, how large an `N` can you compute LCAs for `SN` in 1 hour?
