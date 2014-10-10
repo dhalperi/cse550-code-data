@@ -16,7 +16,7 @@ The *least common ancestor* `a*` of `p1` and `p2` is the unique ancestor of both
 * If `a` is an ancestor of both `p1` and `p2`, let `d1` (the *depth* of `p1`) be the number of citation hops in the shortest path from `p1` to `a`, with `d2` defined analogously for `p2`. Then the `depth` of ancestor `a`, denoted `da`, is the larger of `d1` and `d2`.
     If `a` and `b` are two ancestors of both `p1` and `p2`, and `da < db`, then `a < b`.
 * Let `ya` be the publication year of ancestor `a`, and `yb` defined similarly for `b`. If `da = db` and `ya < yb`, then `a < b`.
-* If `da = db` and `ya = yb`, then break the tie by asserting choosing the ancestor with the smaller `id`.
+* If `da = db` and `ya = yb`, then break the tie by choosing the ancestor `a*` with the smaller `id`.
 
 Because no two papers have the same `id`, there is at most one least common ancestor `a*` for any two papers.
 
