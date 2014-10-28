@@ -26,7 +26,7 @@ C = 5
 # load the data
 #################
 cells = {}
-for Cruise, Day, File_Id, Cell_Id, fsc_small, chl_small, pe, pop in load_gzip_csv('rawdata/big_data.csv.gz'):
+for Cruise, Day, File_Id, Cell_Id, fsc_small, chl_small, pe, pop in load_gzip_csv('rawdata/sample.csv.gz'):
     # We have enough cells
     if len(cells) >= N:
         break
